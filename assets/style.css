@@ -13,7 +13,6 @@
 }
 
 body {
-  background: rgb(24, 26, 27);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -29,7 +28,6 @@ a {
 }
 
 header {
-  background: #3f273f;
   position: absolute;
   top: 0;
   left: 0;
@@ -38,7 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: whitesmoke;
+  color: #000;
   padding: 35px 100px 0;
 }
 
@@ -63,6 +61,7 @@ header nav li:last-child {
     padding: 20px 50px;
   }
 }
+
 /* mobile display formatting */
 @media (max-width: 700px) {
   header {
@@ -75,3 +74,89 @@ header nav li:last-child {
     margin: 0 7px;
   }
 }
+.container {
+  position: relative;
+  display: flex;
+  padding: 110px 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.square:hover {
+  background-color: goldenrod;
+  cursor: pointer;
+}
+.square {
+  width: 450px;
+  height: 450px;
+  background-color: teal;
+}
+
+.profile {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 5px solid teal;
+}
+.profile > h3 {
+  width: 25%;
+}
+.profile > img {
+  order: 0;
+  width: 50%;
+}
+
+.profile > p {
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 2;
+}
+
+.portfolio {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+/* TODO: Banner area
+section {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 100px;
+  border: 5px solid #000;
+}
+
+@media (max-width:1000px) {
+  section {
+    padding: 100px 50px;
+  }
+}
+@media (max-width:600px) {
+  section {
+    padding: 125px 30px;
+  }
+
+p {
+  max-width: 200px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 2;
+}
+
+section > h1 {
+  order: 1;
+}
+
+p.profile {
+  order: 0;
+  text-transform: uppercase;
+  background-color: teal;
+  width: 50%;
+} */
