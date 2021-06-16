@@ -48,6 +48,7 @@ header {
   align-items: center;
   color: floralwhite;
   padding: 35px 100px 0;
+  border-bottom: solid 5px teal;
 }
 
 header nav {
@@ -64,6 +65,10 @@ header nav li:first-child {
 
 header nav li:last-child {
   margin-right: 0;
+}
+
+header nav li:hover {
+  color: palegoldenrod;
 }
 
 @media (max-width: 1000px) {
@@ -87,7 +92,7 @@ header nav li:last-child {
 .container {
   position: relative;
   display: flex;
-  padding: 110px 25px;
+  padding: 150px 25px;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
@@ -99,6 +104,7 @@ header nav li:last-child {
   flex-direction: row;
   width: 100%;
   border-bottom: 5px solid teal;
+  border
 }
 .profile > h3 {
   width: 25%;
@@ -120,10 +126,12 @@ header nav li:last-child {
   width: 100%;
   justify-content: space-between;
   gap: 1em;
+  border-bottom: 5px solid teal;
 }
 
 .square:hover {
-  background-color: goldenrod;
+  background-color: palegoldenrod;
+  border-color: palegoldenrod;
   cursor: pointer;
 }
 .square {
@@ -143,13 +151,31 @@ header nav li:last-child {
   align-self: center;
 }
 #app-1:hover {
-  color: goldenrod;
+  color: palegoldenrod;
   cursor: pointer;
-  border-color: goldenrod;
+  border-color: palegoldenrod;
 }
 
 #app-1 img {
   width: 100%;
   height: 100%;
   border-radius: 3%;
+}
+
+footer {
+  margin-top: -275px;
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5em;
+  padding-top: 5%;
+  padding-bottom: -25px;
+  /* flex-direction: column; */
+}
+
+.contact-card a:hover {
+  color: palegoldenrod;
 }
