@@ -12,6 +12,10 @@
   text-align: right;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-image: linear-gradient(
@@ -88,17 +92,6 @@ header nav li:last-child {
   flex-wrap: wrap;
   flex-direction: column;
 }
-.square:hover {
-  background-color: goldenrod;
-  cursor: pointer;
-}
-.square {
-  width: 450px;
-  height: 450px;
-  background-color: teal;
-  box-shadow: 10px 5px 5px rgb(83, 78, 78);
-  transition: all 0.5s ease;
-}
 
 .profile {
   justify-content: flex-start;
@@ -113,6 +106,7 @@ header nav li:last-child {
 .profile > img {
   order: 0;
   width: 50%;
+  border-radius: 3%;
 }
 
 .profile > p {
@@ -128,41 +122,34 @@ header nav li:last-child {
   gap: 1em;
 }
 
-/* TODO: Banner area
-section {
-  display: flex;
-  flex:1;
-  flex-direction: column;
-  align-items: center;
-  padding: 110px 100px;
-  border: 5px solid #000;
+.square:hover {
+  background-color: goldenrod;
+  cursor: pointer;
 }
-
-@media (max-width:1000px) {
-  section {
-    padding: 100px 50px;
-  }
-}
-@media (max-width:600px) {
-  section {
-    padding: 125px 30px;
-  }
-
-p {
-  max-width: 200px;
-  text-align: center;
-  margin-bottom: 35px;
-  padding: 0 20px;
-  line-height: 2;
-}
-
-section > h1 {
-  order: 1;
-}
-
-p.profile {
-  order: 0;
-  text-transform: uppercase;
+.square {
+  width: 450px;
+  height: 450px;
   background-color: teal;
-  width: 50%;
-} */
+  border: 5px solid teal;
+  border-radius: 3%;
+  box-shadow: 10px 5px 5px rgb(83, 78, 78);
+  transition: all 0.5s ease;
+}
+
+#app-1 h3 {
+  z-index: 10;
+  position: absolute;
+  background-color: teal;
+  align-self: center;
+}
+#app-1:hover {
+  color: goldenrod;
+  cursor: pointer;
+  border-color: goldenrod;
+}
+
+#app-1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+}

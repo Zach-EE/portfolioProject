@@ -10,7 +10,7 @@
 
   <body>
     <header>
-      <h2><a href="#">Zach K. Holloway</a></h2>
+      <h2><a href="#profile-pic">Zach K. Holloway</a></h2>
       <nav>
         <li><a href="https://github.com/Zach-EE">Github</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -19,9 +19,13 @@
     </header>
 
     <section class="container">
-      <h2>ABOUT ME</h2>
+      <h2 class="underline">ABOUT ME</h2>
       <div class="profile container">
-        <img src="./assets/images/1.jpg" alt="place holder image" />
+        <img
+          src="./assets/images/profilePic.png"
+          alt="place holder image"
+          id="profile-pic"
+        />
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
           eum veniam iure tempore nesciunt eius hic, tempora iste ducimus beatae
@@ -29,17 +33,25 @@
         </p>
       </div>
       <br />
-      <h2>PORTFOLIO</h2>
+      <h2 class="underline">PORTFOLIO</h2>
       <div class="portfolio container" id="portfolio">
-        <div class="square"><a href="#">PLACEHOLDER</a></div>
-        <div class="square"><a href="#">PLACEHOLDER</a></div>
-        <div class="square"><a href="#">PLACEHOLDER</a></div>
-        <div class="square"><a href="#">PLACEHOLDER</a></div>
+        <div class="square" id="app-1">
+          <a href="https://zach-ee.github.io/rock-paper-scissors/"
+            ><h3>Rock-Paper-Scissors Game</h3>
+            <img
+              src="./assets/images/2.png"
+              alt="rock-paper-scissors game image"
+            />
+          </a>
+        </div>
+        <div class="square" id="app-2"><a href="#">PLACEHOLDER</a></div>
+        <div class="square" id="app-3"><a href="#">PLACEHOLDER</a></div>
+        <div class="square" id="app-4"><a href="#">PLACEHOLDER</a></div>
       </div>
     </section>
 
     <footer class="container">
-      <h2 id="contact">CONTACT</h2>
+      <h2 class="underline" id="contact">CONTACT</h2>
     </footer>
   </body>
 </html>
